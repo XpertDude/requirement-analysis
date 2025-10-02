@@ -82,3 +82,24 @@ Requirement Analysis is the **cornerstone of successful software development**. 
 In short:
 - **Good requirements = Successful project.**
 - **Poor requirements = Costly failures.**
+
+  
+# Software Development Lifecycle (SDLC):
+1. Clarity and Shared Understanding
+
+Requirement Analysis ensures that all stakeholders (clients, users, developers, testers, and project managers) have the same understanding of what the system should achieve.
+
+Without clear requirements, teams may build features that do not align with user needs, leading to wasted effort and dissatisfaction.
+
+2. Accurate Project Planning and Cost Estimation
+
+Clearly defined requirements help in estimating project timelines, costs, and resources more accurately.
+
+When requirements are vague, project managers struggle to plan effectively, which often leads to delays, budget overruns, and missed deadlines.
+
+
+3. Risk and Cost Reduction
+
+Identifying and fixing requirement-related issues early in the SDLC is far less expensive than discovering them during development or testing.
+
+By analyzing requirements thoroughly, teams can foresee potential challenges, avoid rework, and reduce the overall risk of project failure.
