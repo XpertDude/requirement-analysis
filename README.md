@@ -84,7 +84,7 @@ In short:
 - **Poor requirements = Costly failures.**
 
   
-# Software Development Lifecycle (SDLC):
+# Why is Requirement Analysis Important?
 1. Clarity and Shared Understanding
 
 Requirement Analysis ensures that all stakeholders (clients, users, developers, testers, and project managers) have the same understanding of what the system should achieve.
