@@ -128,3 +128,30 @@ Requirement Analysis involves several structured activities that help ensure the
   - Reviewing and verifying requirements with stakeholders to confirm accuracy, feasibility, and alignment with business goals.  
   - Ensures requirements are **clear, consistent, testable, and achievable** before moving to the design phase.
   - 
+## Types of Requirements
+
+### Functional Requirements  
+Functional requirements describe **what** the system must do. They are features, behaviors, and functions the software must support.
+
+Examples for a hotel-booking project:
+
+- Users must be able to **search** hotels by location, check-in / check-out date, price range, number of guests.  
+- The system must allow users to **book** a hotel room, including selecting room type, confirming availability, and making a reservation.  
+- Integration with **payment gateway** so users can pay online.  
+- Hotel managers must have a portal to **manage their hotel listings**: add/update hotel info, room availability, rates.  
+- The system must send **notifications** (email or app push) to users and hotel managers when a booking is confirmed or cancelled.  
+
+---
+
+### Non-Functional Requirements  
+Non-functional requirements describe **how** the system performs or operates. They include constraints, qualities, system performance, usability, reliability, etc.
+
+Examples for the same hotel-booking project:
+
+- **Performance / Scalability**: The system should support high user traffic (many concurrent search / booking requests), e.g. through load balancing, caching (e.g. using Redis), and database scaling (master-slave, replicas). :contentReference[oaicite:0]{index=0}  
+- **Availability / Fault tolerance**: The impact of downtime must be minimized; the hotel booking service must be highly available. Components like multiple servers and use of replicas to ensure read/write separation help. :contentReference[oaicite:1]{index=1}  
+- **Latency / Responsiveness**: Search responses should be fast. Use of caching (e.g. Redis) and optimized search (e.g. ElasticSearch) to reduce time to return results. :contentReference[oaicite:2]{index=2}  
+- **Consistency & Data Integrity**: Reservation data must be accurate (no double-booking), database transactions must maintain integrity.  
+- **Security**: Protect user data (payment info, personal details), secure communication (TLS/HTTPS), prevent unauthorized access to management portals.  
+- **Maintainability / Extensibility**: The architecture should make it possible to add new features (e.g. reviews, offers, recommendation engine) without major rework.  
+
