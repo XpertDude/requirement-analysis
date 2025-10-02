@@ -155,3 +155,79 @@ Examples for the same hotel-booking project:
 - **Security**: Protect user data (payment info, personal details), secure communication (TLS/HTTPS), prevent unauthorized access to management portals.  
 - **Maintainability / Extensibility**: The architecture should make it possible to add new features (e.g. reviews, offers, recommendation engine) without major rework.  
 
+## Use Case Diagrams
+
+### What are Use Case Diagrams?
+Use Case Diagrams are a type of **Unified Modeling Language (UML)** diagram that visually represent the interactions between **actors** (users or external systems) and the **system** itself.  
+
+They help illustrate the functional requirements of a system by showing:  
+- **Actors**: The entities (people or systems) that interact with the system.  
+- **Use Cases**: The actions or services the system provides to the actors.  
+- **Relationships**: How actors are connected to use cases.  
+
+### Benefits of Use Case Diagrams
+- Provide a **clear, visual overview** of system functionality.  
+- Help in identifying **stakeholder needs and system boundaries**.  
+- Facilitate communication between **technical and non-technical stakeholders**.  
+- Act as a foundation for creating **detailed requirements** and **test cases**.  
+
+---
+
+### Use Case Diagram for the Booking Management System
+
+The following diagram represents the hotel booking system, inspired by apps like Airbnb or OYO.
+
+**Actors:**
+- **Guest/User**: Searches for hotels, books rooms, makes payments, manages bookings.  
+- **Hotel Manager**: Manages hotel listings, availability, and pricing.  
+- **Payment Gateway**: Processes payments securely.  
+- **System Admin**: Monitors and maintains the system.  
+
+**Use Cases:**
+- Search for hotels  
+- View hotel details  
+- Book a room  
+- Cancel booking  
+- Make payment  
+- Manage listing (add/update rooms, availability, pricing)  
+- Receive booking notifications  
+- System monitoring and maintenance  
+
+---
+
+### Diagram
+
+![Use Case Diagram for Booking Management System](alx-booking-uc.png)
+
+## Acceptance Criteria
+
+### Importance of Acceptance Criteria
+Acceptance Criteria are a set of predefined conditions that a software feature must meet in order to be accepted by stakeholders. They act as a bridge between requirements and testing, ensuring that **what is built matches what was intended**.  
+
+**Key benefits of Acceptance Criteria in Requirement Analysis:**
+- **Clarity of Expectations:** Clearly defines what “done” means for a feature.  
+- **Testability:** Provides measurable conditions that can be verified during testing.  
+- **Alignment:** Ensures developers, testers, and stakeholders share the same understanding of requirements.  
+- **Scope Control:** Prevents scope creep by defining boundaries for feature behavior.  
+- **Quality Assurance:** Serves as a baseline to validate that the delivered product meets business and user needs.  
+
+---
+
+### Example: Acceptance Criteria for Checkout Feature
+
+**Feature:** *Checkout Process for Hotel Booking*  
+
+**Acceptance Criteria:**
+1. The system must allow a guest to view a summary of their booking (hotel details, room type, price, taxes, and total cost) before proceeding to payment.  
+2. The guest must be able to select a saved payment method or enter new payment details securely.  
+3. The system must integrate with the payment gateway to process the transaction.  
+4. If payment is successful:  
+   - The booking should be confirmed.  
+   - A confirmation notification (email and/or push notification) should be sent to the guest.  
+   - The hotel manager should receive a booking notification.  
+5. If payment fails:  
+   - The system should display an appropriate error message.  
+   - The guest should be allowed to retry payment or select another method.  
+6. The booking should not be created or confirmed until payment is successfully completed.  
+
+---
